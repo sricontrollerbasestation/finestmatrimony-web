@@ -1,69 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>Feedback | Finest Matrimony</title>
-
-  <!-- Bootstrap -->
+  <title>Finest Matrimony | Find your eternal half</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- External CSS -->
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="navbar.css">
-
-  <style>
-    body {
-      background: #f7fbff;
-    }
-
-    .feedback-box {
-      border-radius: 25px;
-      overflow: hidden;
-    }
-
-    .btn-theme {
-      background: linear-gradient(to right, #117c86, #279e6b);
-      border: none;
-      color: white;
-      font-weight: 600;
-    }
-
-    .btn-theme:hover {
-      color: white;
-      opacity: 0.9;
-    }
-
-    .feedback-section {
-      padding: 80px 0;
-    }
-
-    .navbar-brand {
-      font-size: 28px;
-    }
-
-    .social-icon svg {
-      transition: 0.3s;
-    }
-
-    .social-icon svg:hover {
-      transform: scale(1.1);
-    }
-
-    .playstore-img {
-      height: 45px;
-      margin-left: 10px;
-    }
-  </style>
+  
 </head>
 
+
+<style>
+ 
+
+ .pricing-section{
+    background: linear-gradient(to right,#ffffff,#eafcff,#ffffff);
+    padding:80px 20px;
+}
+
+.pricing-card{
+    max-width:700px;
+    margin:auto;
+    border:none;
+    border-radius:25px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,0.15);
+}
+
+.pricing-header{
+    background: linear-gradient(to right,#117c86,#279e6b);
+    color:white;
+    padding:30px;
+    text-align:center;
+}
+
+.launch-badge{
+    background:#00c167;
+    color:white;
+    padding:8px 20px;
+    border-radius:30px;
+    display:inline-block;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+.old-price{
+    text-decoration:line-through;
+    color:#ffffff;
+    font-size:28px;
+}
+
+.free-price{
+    color:#00a651;
+    font-size:60px;
+    font-weight:bold;
+}
+
+.feature-list li{
+    padding:12px 0;
+    border-bottom:1px solid #eee;
+}
+
+.join-btn{
+    background:linear-gradient(to right,#117c86,#279e6b);
+    color:white;
+    border:none;
+    border-radius:30px;
+    padding:12px 35px;
+    text-decoration:none;
+}
+
+</style>
 <body>
-
-  <!-- NAVBAR -->
   <div style="background: linear-gradient(to right, #117c86, #279e6b);">
-
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-dark  rounded" style="height: 100px;"
         aria-label="Eleventh navbar example">
@@ -126,7 +136,7 @@
               </span>
             </a>
 
-            <a href="https://www.linkedin.com/company/finestmatrimony/"><span class="social-icon">
+           <a href="https://www.linkedin.com/company/finestmatrimony/"><span class="social-icon">
               <!-- LinkedIn SVG -->
               <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-linkedin"
                 viewBox="0 0 20 20">
@@ -143,307 +153,118 @@
         </div>
       </nav>
     </div>
-
+    
   </div>
 
-  <!-- FEEDBACK SECTION -->
-  <section class="feedback-section">
 
-    <div class="container">
 
-      <div class="row justify-content-center">
 
-        <div class="col-lg-7">
+  
 
-          <div class="card border-0 shadow-lg feedback-box">
+<section class="container py-5">
 
-            <div class="card-body p-5">
-
-              <h2 class="text-center mb-4"
-                style="color:#117c86;">
-
-                Feedback Form
-
-              </h2>
-
-              <form id="feedbackForm">
-
-                <!-- Name -->
-                <div class="mb-3">
-
-                  <label class="form-label">
-                    Name
-                  </label>
-
-                  <input type="text"
-                    id="name"
-                    class="form-control"
-                    required>
-
-                </div>
-
-                <!-- Phone -->
-                <div class="mb-3">
-
-                  <label class="form-label">
-                    Phone Number
-                  </label>
-
-                  <input type="tel"
-                    id="phone"
-                    class="form-control"
-                    placeholder="Enter phone number"
-                    required>
-
-                </div>
-
-                <!-- Email -->
-                <div class="mb-3">
-
-                  <label class="form-label">
-                    Email
-                    <small class="text-muted">
-                      (Optional)
-                    </small>
-                  </label>
-
-                  <input type="email"
-                    id="email"
-                    class="form-control"
-                    placeholder="Enter email if available">
-
-                </div>
-
-                <!-- Subject -->
-                <div class="mb-3">
-
-                  <label class="form-label">
-                    Subject
-                  </label>
-
-                  <input type="text"
-                    id="subject"
-                    class="form-control"
-                    required>
-
-                </div>
-
-                <!-- Message -->
-                <div class="mb-4">
-
-                  <label class="form-label">
-                    Message
-                  </label>
-
-                  <textarea id="message"
-                    rows="5"
-                    class="form-control"
-                    required></textarea>
-
-                </div>
-
-                <!-- Button -->
-                <button type="submit"
-                  class="btn btn-theme w-100 py-2">
-
-                  Submit Feedback
-
-                </button>
-
-              </form>
-
-              <!-- Status -->
-              <div id="status"
-                class="mt-4 text-center"></div>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
+    <div class="text-center mb-5">
+        <h2 class="fw-bold">Pay Now</h2>
+        <p class="text-muted">
+            Membership payments will be enabled after the official launch.
+        </p>
     </div>
 
-  </section>
+    <div class="card shadow-lg border-0 rounded-4">
+        <div class="card-body p-5 text-center">
 
-  <!-- FOOTER -->
-  <div style="background-color: #212529; color: white;">
+            <h3 class="text-success mb-3">
+                🎉 Currently FREE
+            </h3>
 
-    <div class="container">
+            <p class="lead">
+                Finest Matrimony is currently in the testing phase.
+                All features are available completely free.
+            </p>
 
-      <footer class="row row-cols-1 row-cols-md-3 py-4 my-4 border-top text-center text-md-start">
+            <hr>
 
-        <!-- Contact -->
-        <div class="col mb-3">
+            <h5>Future Membership Plan</h5>
+            <p>
+                 Membership:
+                <strong>₹999 / Year</strong>
+            </p>
 
-          <h5>Contact Us</h5>
+            <div class="alert alert-info">
+                Payment facilities will be activated after the official
+                company announcement and launch.
+            </div>
 
-          <p class="mb-1">
-            📞 +91 85900 12123
-          </p>
-
-          <p class="mb-0">
-
-            📧
-            <a href="mailto:support@sreebala.in"
-              class="text-white text-decoration-none">
-
-              support@sreebala.in
-
+            <a href="index.html" class="btn btn-success px-4">
+                Continue Using Free Version
             </a>
 
-          </p>
+        </div>
+    </div>
 
+</section>
+
+
+
+
+
+
+  <!-- Footer -->
+  <div style="background-color: #212529; color: white;">
+    <div class="container">
+      <footer class="row row-cols-1 row-cols-md-3 py-4 my-4 border-top text-center text-md-start">
+
+        <!-- Contact Info -->
+        <div class="col mb-3">
+          <h5>Contact Us</h5>
+          <p class="mb-1">📞 +91 85900 12123</p>
+          <p class="mb-0">
+            📧 <a href="mailto:support@sreebala.in" class="text-white text-decoration-none">support@sreebala.in</a>
+          </p>
         </div>
 
-        <!-- About -->
+        <!-- Company Info -->
         <div class="col mb-3">
-
           <h5>About</h5>
-
-          <p class="mb-1">
-            © 2026 <strong>Finest Matrimony</strong>
-          </p>
-
-          <p class="mb-0">
-            Find your eternal half
-            <br>
-            <em>A Sreebala Project</em>
-          </p>
-
+          <p class="mb-1">&copy; 2026 <strong>Finest Matrimony</strong></p>
+          <p class="mb-0">Find your eternal half<br><em>A Sreebala Project</em></p>
         </div>
 
         <!-- Address -->
         <div class="col mb-3">
-
           <h5>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-house-fill me-1"
+              viewBox="0 0 16 16">
+              <path
+                d="M8.354 1.146a.5.5 0 0 0-.708 0L1 7.793V14.5a.5.5 0 0 0 .5.5H6v-4h4v4h4.5a.5.5 0 0 0 .5-.5V7.793l-6.646-6.647z" />
+              <path d="M13 2.5v2.793l2 2V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5z" />
+            </svg>
             Headquarters
           </h5>
-
-          <p class="mb-0">
-            Sreebala HQ, Kunjithai,
-            <br>
-            Ernakulam, Kerala, INDIA
-            <br>
-            PIN: 683522
-          </p>
-
+          <p class="mb-0">Sreebala HQ, Kunjithai,<br> Ernakulam, Kerala, INDIA<br>PIN: 683522</p>
         </div>
-
       </footer>
 
-      <!-- Bottom -->
+
+
+      <p class="text-white site-version"></p>
+
       <div class="text-center py-3 border-top">
-
         <small class="text-white">
-
-          <a href="https://sreebala.in/"
-            class="text-white text-decoration-none"
-            target="_blank">
-
+          <a href="https://sreebala.in/" class="text-white text-decoration-none" target="_blank">
             Sreebala Technology Services LLP
-
           </a>
-
           • All rights reserved
-
         </small>
-
       </div>
-
     </div>
-
   </div>
 
-  <!-- GOOGLE SHEETS SCRIPT -->
-  <script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 
-    // ============================================
-    // GOOGLE APPS SCRIPT WEB APP URL
-    // ============================================
-
-    const scriptURL =
-      "https://script.google.com/macros/s/AKfycbyYGCEb1L9Lp24MzQ3XBax_OCNFC8K3mOJNn2E4es41Ltbw1z9v53DbLGrI-QiOqjzJ8w/exec";
-
-    // ============================================
-    // FORM SUBMIT
-    // ============================================
-
-    document.getElementById("feedbackForm")
-      .addEventListener("submit", async function (e) {
-
-        e.preventDefault();
-
-        const status =
-          document.getElementById("status");
-
-        // Form Data
-        const data = {
-
-          name:
-            document.getElementById("name").value,
-
-          phone:
-            document.getElementById("phone").value,
-
-          email:
-            document.getElementById("email").value ||
-            "Not Provided",
-
-          subject:
-            document.getElementById("subject").value,
-
-          message:
-            document.getElementById("message").value
-
-        };
-
-        try {
-
-          // Send Data
-          await fetch(scriptURL, {
-  method: "POST",
-  mode: "no-cors",
-  headers: {
-    "Content-Type": "application/json"
-  },
-  body: JSON.stringify(data)
-});
-
-          // Success Message
-          status.innerHTML =
-            `
-            <div class="alert alert-success">
-              Feedback submitted successfully ❤️
-            </div>
-            `;
-
-          // Reset Form
-          document.getElementById("feedbackForm").reset();
-
-        } catch (error) {
-
-          // Error Message
-          status.innerHTML =
-            `
-            <div class="alert alert-danger">
-              Failed to submit feedback
-            </div>
-            `;
-
-          console.error(error);
-
-        }
-
-      });
-
-  </script>
-
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
+  <script src="version_holder.js"></script>
 </body>
 
 </html>
