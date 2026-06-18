@@ -56,6 +56,77 @@
     .social-icon svg:hover {
       transform: scale(1.1);
     }
+
+
+
+    .grievance-card {
+      max-width: 800px;
+      margin: auto;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      background: #ffffff;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+    }
+
+    .grievance-header {
+      padding: 18px 22px;
+      border-bottom: 1px solid #eee;
+      background: #f9fafb;
+    }
+
+    .grievance-header h3 {
+      margin: 0;
+      font-size: 26px;
+      font-weight: 600;
+      color: #111827;
+    }
+
+    .grievance-body {
+      padding: 22px;
+    }
+
+    .intro-text {
+      font-size: 18px;
+      color: #4b5563;
+      line-height: 1.6;
+      margin-bottom: 18px;
+    }
+
+    .details-box {
+      background: #f9fafb;
+      border: 1px solid #e5e7eb;
+      padding: 16px;
+      border-radius: 10px;
+      margin-bottom: 16px;
+    }
+
+    .details-box p {
+      margin: 6px 0;
+      font-size: 17px;
+      color: #111827;
+    }
+
+    .details-box span {
+      font-weight: 600;
+      color: #374151;
+    }
+
+    .details-box a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+
+    .details-box a:hover {
+      text-decoration: underline;
+    }
+
+    .footer-note {
+      font-size: 13px;
+      color: #6b7280;
+      line-height: 1.5;
+    }
   </style>
 </head>
 
@@ -64,12 +135,13 @@
   <!-- NAVBAR -->
   <div style="background: linear-gradient(to right, #117c86, #279e6b);">
 
-   <div class="container">
+    <div class="container">
       <nav class="navbar navbar-expand-lg navbar-dark  rounded" style="height: 100px;"
         aria-label="Eleventh navbar example">
         <div class="container-fluid">
 
-          <a class="navbar-brand" href="index.html" style="font-size: 30px; padding-right: 20px;"><b>Finest</b> Matrimony</a>
+          <a class="navbar-brand" href="index.html" style="font-size: 30px; padding-right: 20px;"><b>Finest</b>
+            Matrimony</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample09"
             aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -109,10 +181,10 @@
               <!-- Facebook SVG -->
               <a href="https://www.facebook.com/people/Finest-Matrimony/61590498790100/">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-facebook"
-                viewBox="0 0 20 20">
-                <path
-                  d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
-              </svg>
+                  viewBox="0 0 20 20">
+                  <path
+                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                </svg>
               </a>
             </span>
             <a href="https://www.instagram.com/finestmatrimony/">
@@ -126,19 +198,19 @@
               </span>
             </a>
 
-             <a href="https://www.linkedin.com/company/finestmatrimony/"><span class="social-icon">
-              <!-- LinkedIn SVG -->
-              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-linkedin"
-                viewBox="0 0 20 20">
-                <path
-                  d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
-              </svg>
-            </span>
-</a>
+            <a href="https://www.linkedin.com/company/finestmatrimony/"><span class="social-icon">
+                <!-- LinkedIn SVG -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-linkedin"
+                  viewBox="0 0 20 20">
+                  <path
+                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                </svg>
+              </span>
+            </a>
             <a href="https://play.google.com/store/apps/details?id=com.sreebala.finestmatrimony" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
-                  alt="Get it on Google Play">
-              </a>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                alt="Get it on Google Play">
+            </a>
           </div>
         </div>
       </nav>
@@ -164,11 +236,11 @@
               </h1>
 
               <p class="text-muted text-center">
-                Last Updated: 26 May, 2026
+                Last Updated: 18 June, 2026
               </p>
 
               <p class="mt-4">
-                Welcome to <strong>Finest Matrimony</strong>.
+                Welcome to <strong>Finest Matrimony - A Sreebala Project</strong>.
                 Your privacy is important to us.
                 This Privacy Policy explains how we collect,
                 use, store, and protect your information
@@ -176,228 +248,267 @@
               </p>
 
               <!-- Section -->
-        <!-- SECTION -->
-<h4 class="section-heading">
-  1. Information We Collect
-</h4>
+              <!-- SECTION -->
+              <h4 class="section-heading">
+                1. Information We Collect
+              </h4>
 
-<p>
-  To use Finest Matrimony services, users may be required
-  to provide certain personal information.
-</p>
+              <p>
+                To use Finest Matrimony services, users may be required
+                to provide certain personal information.
+              </p>
 
-<ul>
-  <li>Name and profile information</li>
-  <li>Phone number and email address</li>
-  <li>Date of birth and gender</li>
-  <li>Educational qualifications</li>
-  <li>Address and PIN code</li>
-  <li>Password and login credentials</li>
-  <li>Photos and profile details</li>
-  <li>Feedback and support messages</li>
-</ul>
+              <ul>
+                <li>Name and profile information</li>
+                <li>Phone number and email address</li>
+                <li>Date of birth and gender</li>
+                <li>Educational qualifications</li>
+                <li>Address and PIN code</li>
+                <li>Password and login credentials</li>
+                <li>Photos and profile details</li>
+                <li>Feedback and support messages</li>
+              </ul>
 
-<p>
-  If required information is not provided,
-  some platform services may not work properly.
-</p>
+              <p>
+                If required information is not provided,
+                some platform services may not work properly.
+              </p>
 
-<!-- SECTION -->
-<h4 class="section-heading">
-  2. Payment & Billing Information
-</h4>
+              <!-- SECTION -->
+              <h4 class="section-heading">
+                2. Payment & Billing Information
+              </h4>
 
-<p>
-  During paid registrations or subscription services,
-  billing and payment-related information may be collected.
-</p>
+              <p>
+                During paid registrations or subscription services,
+                billing and payment-related information may be collected.
+              </p>
 
-<ul>
-  <li>Billing address</li>
-  <li>Payment transaction details</li>
-  <li>UPI / card / payment gateway information</li>
-  <li>Transaction reference numbers</li>
-</ul>
+              <ul>
+                <li>Billing address</li>
+                <li>Payment transaction details</li>
+                <li>UPI / card / payment gateway information</li>
+                <li>Transaction reference numbers</li>
+              </ul>
 
-<p>
-  Payment transactions are processed securely
-  using trusted third-party payment gateways.
-</p>
+              <p>
+                Payment transactions are processed securely
+                using trusted third-party payment gateways.
+              </p>
 
-<!-- SECTION -->
-<h4 class="section-heading">
-  3. Device & Technical Information
-</h4>
+              <!-- SECTION -->
+              <h4 class="section-heading">
+                3. Device & Technical Information
+              </h4>
 
-<p>
-  When users access our website or mobile application,
-  certain technical information may be collected automatically.
-</p>
+              <p>
+                When users access our website or mobile application,
+                certain technical information may be collected automatically.
+              </p>
 
-<ul>
-  <li>IP address</li>
-  <li>Browser type and device information</li>
-  <li>Operating system details</li>
-  <li>Location, city and timezone</li>
-  <li>User activity and log data</li>
-  <li>Cookies and session data</li>
-  <li>Referral and access information</li>
-</ul>
+              <ul>
+                <li>IP address</li>
+                <li>Browser type and device information</li>
+                <li>Operating system details</li>
+                <li>Location, city and timezone</li>
+                <li>User activity and log data</li>
+                <li>Cookies and session data</li>
+                <li>Referral and access information</li>
+              </ul>
 
-<!-- SECTION -->
-<h4 class="section-heading">
-  4. Cookies & Tracking Technologies
-</h4>
+              <!-- SECTION -->
+              <h4 class="section-heading">
+                4. Cookies & Tracking Technologies
+              </h4>
 
-<p>
-  Finest Matrimony may use cookies and browser storage
-  to improve user experience and platform functionality.
-</p>
+              <p>
+                Finest Matrimony may use cookies and browser storage
+                to improve user experience and platform functionality.
+              </p>
 
-<p>
-  Some third-party services may also use cookies.
-  We are not responsible for third-party cookie policies.
-</p>
+              <p>
+                Some third-party services may also use cookies.
+                We are not responsible for third-party cookie policies.
+              </p>
 
-<!-- SECTION -->
-<h4 class="section-heading">
-  5. How We Use Your Information
-</h4>
+              <!-- SECTION -->
+              <h4 class="section-heading">
+                5. How We Use Your Information
+              </h4>
 
-<p>
-  User information may be used for:
-</p>
+              <p>
+                User information may be used for:
+              </p>
 
-<ul>
-  <li>Creating and managing user accounts</li>
-  <li>Providing matchmaking services</li>
-  <li>Improving user experience</li>
-  <li>Fraud prevention and account security</li>
-  <li>Analytics and performance monitoring</li>
-  <li>Customer support and communication</li>
-  <li>Platform improvements and marketing analysis</li>
-</ul>
+              <ul>
+                <li>Creating and managing user accounts</li>
+                <li>Providing matchmaking services</li>
+                <li>Improving user experience</li>
+                <li>Fraud prevention and account security</li>
+                <li>Analytics and performance monitoring</li>
+                <li>Customer support and communication</li>
+                <li>Platform improvements and marketing analysis</li>
+              </ul>
 
-<!-- SECTION -->
-<h4 class="section-heading">
-  6. Sharing of Information
-</h4>
+              <!-- SECTION -->
+              <h4 class="section-heading">
+                6. Sharing of Information
+              </h4>
 
-<p>
-  We may share information with:
-</p>
+              <p>
+                We may share information with:
+              </p>
 
-<ul>
-  <li>Trusted service providers</li>
-  <li>Payment gateway partners</li>
-  <li>Cloud and hosting providers</li>
-  <li>Fraud prevention partners</li>
-  <li>Legal authorities when required by law</li>
-</ul>
+              <ul>
+                <li>Trusted service providers</li>
+                <li>Payment gateway partners</li>
+                <li>Cloud and hosting providers</li>
+                <li>Fraud prevention partners</li>
+                <li>Legal authorities when required by law</li>
+              </ul>
 
-<p>
-  We may also share information during business mergers,
-  acquisitions, or company restructuring processes.
-</p>
+              <p>
+                We may also share information during business mergers,
+                acquisitions, or company restructuring processes.
+              </p>
 
-<!-- SECTION -->
-<h4 class="section-heading">
-  7. Data Retention
-</h4>
+              <!-- SECTION -->
+              <h4 class="section-heading">
+                7. Data Retention
+              </h4>
 
-<p>
-  User information may be stored for as long as required
-  to provide services, resolve disputes,
-  enforce agreements, comply with laws,
-  and improve platform operations.
-</p>
+              <p>
+                User information may be stored for as long as required
+                to provide services, resolve disputes,
+                enforce agreements, comply with laws,
+                and improve platform operations.
+              </p>
 
-<!-- SECTION -->
-<h4 class="section-heading">
-  8. Data Security
-</h4>
+              <!-- SECTION -->
+              <h4 class="section-heading">
+                8. Data Security
+              </h4>
 
-<p>
-  Finest Matrimony uses reasonable technical
-  and organizational security measures
-  to protect user information.
-</p>
+              <p>
+                Finest Matrimony uses reasonable technical
+                and organizational security measures
+                to protect user information.
+              </p>
 
-<p>
-  However, no internet-based system can be guaranteed
-  to be 100% secure at all times.
-</p>
+              <p>
+                However, no internet-based system can be guaranteed
+                to be 100% secure at all times.
+              </p>
 
-<!-- SECTION -->
-<h4 class="section-heading">
-  9. Children's Privacy
-</h4>
+              <!-- SECTION -->
+              <h4 class="section-heading">
+                9. Children's Privacy
+              </h4>
 
-<p>
-  Finest Matrimony is strictly for adults only.
-</p>
+              <p>
+                Finest Matrimony is strictly for adults only.
+              </p>
 
-<ul>
-  <li>Women must be 18+ years old</li>
-  <li>Men must be 21+ years old</li>
-  <li>Minor registrations are strictly prohibited</li>
-  <li>No content involving minors is allowed</li>
-  <li>Fake age or identity information is prohibited</li>
-</ul>
+              <ul>
+                <li>Women must be 18+ years old</li>
+                <li>Men must be 21+ years old</li>
+                <li>Minor registrations are strictly prohibited</li>
+                <li>No content involving minors is allowed</li>
+                <li>Fake age or identity information is prohibited</li>
+              </ul>
 
-<p>
-  Any violation may result in account suspension
-  and reporting to legal authorities.
-</p>
+              <p>
+                Any violation may result in account suspension
+                and reporting to legal authorities.
+              </p>
 
-<!-- SECTION -->
-<h4 class="section-heading">
-  10. Privacy Policy Updates
-</h4>
+              <!-- SECTION -->
+              <h4 class="section-heading">
+                10. Privacy Policy Updates
+              </h4>
 
-<p>
-  Finest Matrimony may update this Privacy Policy
-  at any time without prior notice.
-</p>
+              <p>
+                Finest Matrimony may update this Privacy Policy
+                at any time without prior notice.
+              </p>
 
-<p>
-  Users are advised to regularly review this page
-  for the latest updates.
-</p>
+              <p>
+                Users are advised to regularly review this page
+                for the latest updates.
+              </p>
 
-<!-- SECTION -->
-<h4 class="section-heading">
-  11. Grievance & Support
-</h4>
+              <!-- SECTION -->
+              <h4 class="section-heading">
+                11. Grievance & Support
+              </h4>
 
-<p>
-  If you have any complaints, concerns,
-  or privacy-related questions,
-  please contact us:
-</p>
+              <div class="mt-5">
+                <div class="grievance-card">
 
-<ul>
-  <li>
-    <strong>Company:</strong>
-    Sreebala Technology Services LLP
-  </li>
+                  <div class="grievance-header">
+                    <h3>Grievance Redressal</h3>
+                  </div>
 
-  <li>
-    <strong>Email:</strong>
-    support@sreebala.in
-  </li>
+                  <div class="grievance-body">
+                    <p class="intro-text">
+                      We value your trust and are committed to addressing your concerns in a fair,
+                      transparent, and timely manner. If you have any grievances regarding our services,
+                      your personal data, or platform content, you may contact our Grievance Officer.
+                    </p>
 
-  <li>
-    <strong>Phone:</strong>
-    +91 85900 12123
-  </li>
+                    <div class="details-box">
+                      <p><span>Grievance Officer:</span> <b>Sajaykrishna Valyakkal Sajeevan</b></p>
+                      <p><span>Designation:</span> Grievance Officer & CTO, Sreebala Technology Services LLP</p>
+                      <p><span>Company:</span> Sreebala Technology Services LLP</p>
+                      <p>
+                        <span>Phone:</span>
+                        <a href="tel:+918590012123">+91 85900 12123</a>
+                      </p>
+                      <p>
+                        <span>Email:</span>
+                        <a href="mailto:sajaykrishna@sreebala.in">sajaykrishna@sreebala.in</a>
+                      </p>
+                      <p><span>Address:</span> Sreebala Headquarters, Kunjithai PO <br>
+                        Vadakkekara, North Paravur <br>
+                        Ernakulam, Kerala - 683522, India</p>
+                    </div>
 
-  <li>
-    <strong>Address:</strong>
-    Sreebala HQ, Kunjithai,
-    Ernakulam, Kerala, India - 683522
-  </li>
-</ul>
+                    <div class="footer-note">
+                      Available: Monday – Saturday | 9:30 AM to 5:30 PM IST
+                      <br>
+                      Closed on Sundays and Public Holidays in India
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+
+              <br><br>
+
+
+              <ul>
+                <li>
+                  <strong>Company:</strong>
+                  Sreebala Technology Services LLP
+                </li>
+
+                <li>
+                  <strong>Email:</strong>
+                  team@finestmatrimony.com
+                </li>
+
+                <li>
+                  <strong>Phone:</strong>
+                  +91 85900 12123
+                </li>
+
+                <li>
+                  <strong>Address:</strong>
+                  Sreebala HQ, Kunjithai,
+                  Ernakulam, Kerala, India - 683522
+                </li>
+              </ul>
 
             </div>
 
@@ -430,10 +541,9 @@
           <p class="mb-0">
 
             📧
-            <a href="mailto:support@sreebala.in"
-              class="text-white text-decoration-none">
+            <a href="mailto:team@finestmatrimony.com" class="text-white text-decoration-none">
 
-              support@sreebala.in
+              team@finestmatrimony.com
 
             </a>
 
@@ -482,9 +592,7 @@
 
         <small class="text-white">
 
-          <a href="https://sreebala.in/"
-            class="text-white text-decoration-none"
-            target="_blank">
+          <a href="https://sreebala.in/" class="text-white text-decoration-none" target="_blank">
 
             Sreebala Technology Services LLP
 
