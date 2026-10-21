@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Finest Refer & Earn | Finest Matrimony</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="icon" type="image/png" href="Finest-logo.png">
+
+  <style>
+    .announcement-bar {
+      background: linear-gradient(to right, #838383, #606252);
+      color: white;
+      font-size: 15px;
+      font-weight: 600;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      letter-spacing: 0.5px;
+    }
+
+    .announcement-bar marquee {
+      width: 100%;
+    }
+
+    .refer-hero {
+      padding: 90px 20px;
+      background: linear-gradient(to right, #ffffff, #ffffff, #ace2ff);
+    }
+
+    .refer-hero h1 {
+      font-size: clamp(32px, 5vw, 48px);
+      font-weight: 800;
+      color: #117c86;
+    }
+
+    .refer-hero p {
+      font-size: 18px;
+      color: #333;
+    }
+
+    .refer-section {
+      background: linear-gradient(to right, #ffffff, #e0feff, #ffffff);
+      padding: 55px 0;
+    }
+
+    .refer-card {
+      background: #fff;
+      border: none;
+      border-radius: 18px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .refer-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .refer-icon {
+      font-size: 42px;
+      color: #117c86;
+    }
+
+    .reward-box {
+      background: linear-gradient(135deg, #e5fff3, #e6f7ff);
+      border-radius: 18px;
+      padding: 25px;
+      height: 100%;
+      text-align: center;
+    }
+
+    .reward-amount {
+      color: #117c86;
+      font-size: 30px;
+      font-weight: 800;
+    }
+
+    .refer-steps {
+      counter-reset: step;
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .refer-steps li {
+      position: relative;
+      padding: 12px 15px 12px 55px;
+      margin-bottom: 12px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    .refer-steps li::before {
+      counter-increment: step;
+      content: counter(step);
+      position: absolute;
+      left: 14px;
+      top: 10px;
+      width: 28px;
+      height: 28px;
+      line-height: 28px;
+      text-align: center;
+      border-radius: 50%;
+      background: #117c86;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    .refer-cta {
+      background: linear-gradient(to right, #117c86, #279e6b);
+      color: #fff;
+      padding: 35px 20px;
+      border-radius: 20px;
+      text-align: center;
+    }
+
+    .refer-cta h2 {
+      font-weight: 800;
+    }
+
+    .refer-cta p {
+      font-size: 17px;
+    }
+
+    .refer-cta a {
+      display: inline-block;
+      background: #fff;
+      color: #117c86;
+      padding: 11px 25px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 700;
+      margin-top: 10px;
+    }
+
+    .refer-cta a:hover {
+      background: #e8ffff;
+    }
+
+    @media (max-width: 768px) {
+      .refer-hero {
+        padding: 60px 15px;
+        text-align: center;
+      }
+
+      .refer-hero p {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <div style="background: linear-gradient(to right, #117c86, #279e6b);">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark  rounded" style="height: 100px;"
+        aria-label="Eleventh navbar example">
+        <div class="container-fluid">
+
+          <a class="navbar-brand" href="index.html" style="font-size: 30px; padding-right: 20px;"><b>Finest</b> Matrimony</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample09"
+            aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarsExample09"
+            style="background: linear-gradient(to right, #00c167, #4fc1ff); padding: 10px; border-radius: 20px;">
+
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"><b> HOME</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="packages.html">PACKAGE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="pay.html">PAY NOW</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdown09" data-bs-toggle="dropdown"
+                  aria-expanded="false">More</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown09">
+
+                  <li><a class="dropdown-item" href="refer&earn.html">Finest Refer & Earn</a></li>
+                  <li><a class="dropdown-item" href="LifeAtFinestMatrimony.html">Life@FinestMatrimony</a></li>
+                  <li><a class="dropdown-item" href="update.html">Update</a></li>
+                  <li><a class="dropdown-item" href="feedback.html">Feedback</a></li>
+                  <li><a class="dropdown-item" href="privacypolicy.html">Privacy Policy</a></li>
+                  <li><a class="dropdown-item" href="termandcondition.html">Terms & Condition</a></li>
+                  <li><a class="dropdown-item" href="company.html">Company</a></li>
+                </ul>
+              </li>
+            </ul>
+            <!-- Social media icons -->
+
+
+            <span class="social-icon" style="margin-right: 8px;">
+              <!-- Facebook SVG -->
+              <a href="https://www.facebook.com/people/Finest-Matrimony/61590498790100/">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-facebook"
+                viewBox="0 0 20 20">
+                <path
+                  d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+              </svg>
+              </a>
+            </span>
+            <a href="https://www.instagram.com/finestmatrimony/">
+              <span class="social-icon">
+                <!-- Instagram SVG -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-instagram"
+                  viewBox="0 0 20 20">
+                  <path
+                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                </svg>
+              </span>
+            </a>
+
+           <a href="https://www.linkedin.com/company/finestmatrimony/"><span class="social-icon">
+              <!-- LinkedIn SVG -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-linkedin"
+                viewBox="0 0 20 20">
+                <path
+                  d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+              </svg>
+            </span>
+</a>
+            <a href="https://play.google.com/store/apps/details?id=com.sreebala.finestmatrimony" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                  alt="Get it on Google Play">
+              </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    
+  </div>
+
+  <!-- Announcement -->
+  <div class="announcement-bar">
+    <marquee behavior="scroll" direction="left" scrollamount="6">
+      🎉 Welcome to <b>Finest Matrimony</b> — Currently in testing phase.
+      Enjoy all features FREE until the official launch 🚀 |
+      Find your eternal half with trust, safety & love ❤️
+    </marquee>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="refer-hero">
+    <div class="container">
+      <div class="row align-items-center g-4">
+
+        <div class="col-md-7">
+          <h1>Finest Refer & Earn</h1>
+
+          <h4 class="text-dark mt-3">
+            Share Opportunities. Earn Rewards.
+          </h4>
+
+          <p class="mt-3">
+            Introduce Finest Matrimony to more people and earn referral
+            rewards for eligible registrations. A simple way to grow
+            together with Finest Matrimony.
+          </p>
+
+          <a href="https://play.google.com/store/apps/details?id=com.sreebala.finestmatrimony"
+            target="_blank" rel="noopener noreferrer"
+            class="btn btn-success btn-lg mt-2">
+            Explore Finest Matrimony
+          </a>
+        </div>
+
+        <div class="col-md-5 text-center">
+          <img src="Finest-logo.png"
+            alt="Finest Matrimony Logo"
+            class="img-fluid"
+            style="max-width: 280px;">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="refer-section">
+    <div class="container">
+
+      <div class="row align-items-center g-4">
+
+        <div class="col-md-5">
+          <h2 class="fw-bold">What Is Finest Refer & Earn?</h2>
+
+          <p class="fs-5 mt-3">
+            Finest Refer & Earn is a referral programme by
+            <strong>Sreebala Technology Services LLP</strong>.
+            Share your referral code with friends, family, and your
+            audience to help them discover Finest Matrimony.
+          </p>
+        </div>
+
+        <div class="col-md-7">
+          <div class="card refer-card shadow-sm p-4">
+            <h4 class="fw-bold">Why Finest Matrimony?</h4>
+
+            <p class="text-muted mt-2 mb-2">
+              ❤️ Affordable annual subscription of ₹999
+            </p>
+
+            <p class="text-muted mb-2">
+              ✅ Government ID verification
+            </p>
+
+            <p class="text-muted mb-2">
+              🔒 Privacy-focused contact sharing
+            </p>
+
+            <p class="text-muted mb-0">
+              💬 Connection requests with mutual acceptance
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section style="background: linear-gradient(to right, #78f6ff, #ffffff);">
+    <div class="container py-5">
+
+      <h2 class="text-center mb-5 fw-bold" style="color: #353f33;">
+        How Does It Work?
+      </h2>
+
+      <div class="row g-4">
+
+        <div class="col-md-4">
+          <div class="card refer-card shadow-sm p-4 h-100">
+            <div class="refer-icon">📝</div>
+            <h5 class="fw-bold mt-3">1. Register</h5>
+            <p class="text-muted mb-0">
+              Register through the Finest Refer & Earn app and provide
+              the required details.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card refer-card shadow-sm p-4 h-100">
+            <div class="refer-icon">🔗</div>
+            <h5 class="fw-bold mt-3">2. Share Your Code</h5>
+            <p class="text-muted mb-0">
+              Receive your referral code and share it with friends,
+              family, followers, and potential users.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card refer-card shadow-sm p-4 h-100">
+            <div class="refer-icon">🎁</div>
+            <h5 class="fw-bold mt-3">3. Earn Rewards</h5>
+            <p class="text-muted mb-0">
+              Earn referral rewards for eligible profiles according
+              to the programme's terms and conditions.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Rewards -->
+  <section class="refer-section">
+    <div class="container">
+
+      <h2 class="text-center fw-bold mb-3">
+        Referral Rewards
+      </h2>
+
+      <p class="text-center text-muted mb-5">
+        Earn rewards for eligible bride and groom profile referrals.
+      </p>
+
+      <div class="row g-4 justify-content-center">
+
+        <div class="col-md-4">
+          <div class="reward-box shadow-sm">
+            <div style="font-size: 42px;">👰</div>
+            <h5 class="fw-bold mt-2">Bride Profile</h5>
+            <div class="reward-amount">₹50</div>
+            <p class="text-muted mb-0">Per eligible referral</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="reward-box shadow-sm">
+            <div style="font-size: 42px;">🤵</div>
+            <h5 class="fw-bold mt-2">Groom Profile</h5>
+            <div class="reward-amount">₹5</div>
+            <p class="text-muted mb-0">Per eligible referral</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="reward-box shadow-sm">
+            <div style="font-size: 42px;">🎉</div>
+            <h5 class="fw-bold mt-2">New Users</h5>
+            <div class="reward-amount">FREE</div>
+            <p class="text-muted mb-0">
+              Eligible users can receive the ₹999 annual plan free
+              under the referral offer.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="card refer-card shadow-sm p-4 mt-4">
+        <h5 class="fw-bold">Reward Conditions</h5>
+
+        <ul class="text-muted mb-0">
+          <li>Referred profiles must remain active for six months.</li>
+          <li>Rewards are scheduled for payment on the last day of the
+            month in which the six-month period is completed.</li>
+          <li>Profiles deleted before completing six months are not
+            eligible for rewards.</li>
+          <li>Marriage within six months does not affect eligibility,
+            provided the profile remains active and all other
+            conditions are satisfied.</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Influencer Collaboration -->
+  <section style="background: linear-gradient(to right, #78f6ff, #ffffff);">
+    <div class="container py-5">
+
+      <div class="refer-cta">
+        <h2>Grow With Finest Matrimony</h2>
+
+        <p class="mt-3 mb-2">
+          Are you a social media influencer, content creator, or
+          promotional partner?
+        </p>
+
+        <p>
+          Explore referral opportunities and discuss customised
+          promotional packages with us.
+        </p>
+
+        <a href="mailto:team@finestmatrimony.com?subject=Finest%20Refer%20%26%20Earn%20Enquiry">
+          Contact Us
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <div style="background-color: #212529; color: white;">
+    <div class="container">
+
+      <footer class="row row-cols-1 row-cols-md-3 py-4 my-4 border-top text-center text-md-start">
+
+        <div class="col mb-3">
+          <h5>Contact Us</h5>
+          <p class="mb-1">📞 +91 85900 12123</p>
+          <p class="mb-0">
+            📧
+            <a href="mailto:team@finestmatrimony.com"
+              class="text-white text-decoration-none">
+              team@finestmatrimony.com
+            </a>
+          </p>
+        </div>
+
+        <div class="col mb-3">
+          <h5>About</h5>
+          <p class="mb-1">
+            &copy; 2026 <strong>finestmatrimony.com</strong>
+          </p>
+          <p class="mb-0">
+            Find your eternal half<br>
+            <em>A Sreebala Project</em>
+          </p>
+        </div>
+
+        <div class="col mb-3">
+          <h5>
+            <svg xmlns="http://www.w3.org/2000/svg"
+              width="20" height="20" fill="white"
+              viewBox="0 0 16 16" class="me-1">
+              <path d="M8.354 1.146a.5.5 0 0 0-.708 0L1 7.793V14.5a.5.5 0 0 0 .5.5H6v-4h4v4h4.5a.5.5 0 0 0 .5-.5V7.793z"/>
+            </svg>
+            Headquarters
+          </h5>
+
+          <p class="mb-0">
+            Sreebala HQ, Kunjithai,<br>
+            Ernakulam, Kerala, INDIA<br>
+            PIN: 683522
+          </p>
+        </div>
+
+      </footer>
+
+      <p class="text-white site-version"></p>
+
+      <div class="text-center py-3 border-top">
+        <small class="text-white">
+          <a href="https://sreebala.in/"
+            class="text-white text-decoration-none"
+            target="_blank" rel="noopener noreferrer">
+            Sreebala Technology Services LLP
+          </a>
+          • All rights reserved
+        </small>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="version_holder.js"></script>
+
+</body>
+</html>
+```
