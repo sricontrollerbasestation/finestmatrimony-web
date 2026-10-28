@@ -7,8 +7,7 @@
 
   <title>Finest Refer & Earn | Finest Matrimony</title>
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="navbar.css">
@@ -158,99 +157,265 @@
 
 
 
+
+    /* Features and Unique Differences */
+    .features-difference {
+      padding: 65px 0;
+      background: linear-gradient(135deg, #f0ffff, #ffffff, #e7fff3);
+    }
+
+    .features-heading {
+      color: #117c86;
+      font-weight: 800;
+    }
+
+    .feature-card {
+      background: #fff;
+      border-radius: 18px;
+      padding: 25px 20px;
+      height: 100%;
+      border: 1px solid #e2f3f1;
+      box-shadow: 0 5px 18px rgba(17, 124, 134, 0.07);
+      transition: transform .25s ease, box-shadow .25s ease;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 25px rgba(17, 124, 134, 0.12);
+    }
+
+    .feature-icon {
+      font-size: 38px;
+      margin-bottom: 15px;
+    }
+
+    .feature-card h5 {
+      color: #117c86;
+      font-weight: 700;
+    }
+
+    .difference-table-wrap {
+      overflow-x: auto;
+      border-radius: 14px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+    }
+
+    .difference-table {
+      min-width: 620px;
+      margin-bottom: 0;
+      vertical-align: middle;
+      background: #fff;
+    }
+
+    .difference-table thead th {
+      background: #117c86;
+      color: #fff;
+      padding: 17px;
+      white-space: nowrap;
+    }
+
+    .difference-table tbody td {
+      padding: 16px;
+    }
+
+    .difference-table tbody tr:hover {
+      background: #f0fffb;
+    }
+
+    .feature-illustration {
+      width: 100%;
+      max-width: 460px;
+      height: auto;
+      object-fit: contain;
+      border-radius: 20px;
+    }
+
+    .feature-visual {
+      background: linear-gradient(135deg, #e1ffff, #e9fff2);
+      border-radius: 22px;
+      padding: 18px;
+      text-align: center;
+    }
+
+    .feature-visual h4 {
+      color: #117c86;
+      font-weight: 800;
+    }
+
+    @media (max-width: 768px) {
+      .features-difference {
+        padding: 40px 0;
+      }
+
+      .feature-card {
+        padding: 20px;
+      }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
-/* Features and Unique Differences */
-.features-difference {
-  padding: 65px 0;
-  background: linear-gradient(135deg, #f0ffff, #ffffff, #e7fff3);
-}
-
-.features-heading {
-  color: #117c86;
-  font-weight: 800;
-}
-
-.feature-card {
-  background: #fff;
-  border-radius: 18px;
-  padding: 25px 20px;
-  height: 100%;
-  border: 1px solid #e2f3f1;
-  box-shadow: 0 5px 18px rgba(17, 124, 134, 0.07);
-  transition: transform .25s ease, box-shadow .25s ease;
-}
-
-.feature-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 25px rgba(17, 124, 134, 0.12);
-}
-
-.feature-icon {
-  font-size: 38px;
-  margin-bottom: 15px;
-}
-
-.feature-card h5 {
-  color: #117c86;
-  font-weight: 700;
-}
+/* Finest Matrimony — Responsive Comparison Table */
 
 .difference-table-wrap {
-  overflow-x: auto;
-  border-radius: 14px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+    width: 100%;
+    overflow-x: auto;
+    border-radius: 16px;
+    background: #ffffff;
+    box-shadow: 0 8px 28px rgba(17, 124, 134, 0.09);
+    border: 1px solid #e0efec;
 }
 
 .difference-table {
-  min-width: 620px;
-  margin-bottom: 0;
-  vertical-align: middle;
-  background: #fff;
+    width: 100%;
+    min-width: 620px;
+    margin: 0;
+    background: #ffffff;
+    vertical-align: middle;
+    border-collapse: collapse;
 }
 
 .difference-table thead th {
-  background: #117c86;
-  color: #fff;
-  padding: 17px;
-  white-space: nowrap;
+    background: linear-gradient(135deg, #117c86, #279e6b);
+    color: #ffffff;
+    padding: 18px;
+    font-size: 15px;
+    font-weight: 700;
+    border: none;
 }
 
 .difference-table tbody td {
-  padding: 16px;
+    padding: 18px;
+    border: 1px solid #e6f0ee;
+    color: #374151;
+    line-height: 1.75;
+    vertical-align: top;
+    overflow-wrap: anywhere;
 }
 
-.difference-table tbody tr:hover {
-  background: #f0fffb;
+.difference-table tbody td:first-child {
+    width: 32%;
+    color: #117c86;
+    font-weight: 700;
+    background: #f5fbfa;
 }
 
-.feature-illustration {
-  width: 100%;
-  max-width: 460px;
-  height: auto;
-  object-fit: contain;
-  border-radius: 20px;
+.difference-table tbody tr {
+    transition: background 0.2s ease;
 }
 
-.feature-visual {
-  background: linear-gradient(135deg, #e1ffff, #e9fff2);
-  border-radius: 22px;
-  padding: 18px;
-  text-align: center;
+.difference-table tbody tr:hover td {
+    background-color: #ffffff;
 }
 
-.feature-visual h4 {
-  color: #117c86;
-  font-weight: 800;
+/* Mobile: convert table rows into premium cards */
+@media (max-width: 767.98px) {
+    .difference-table-wrap {
+        overflow: visible;
+        border: none;
+        border-radius: 0;
+        background: transparent;
+        box-shadow: none;
+    }
+
+    .difference-table,
+    .difference-table tbody {
+        display: block;
+        width: 100%;
+        min-width: 0;
+        border: none;
+    }
+
+    .difference-table thead {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+    }
+
+    .difference-table tbody tr {
+        display: block;
+        width: 100%;
+        margin: 0 0 16px;
+        overflow: hidden;
+        background: #ffffff;
+        border: 1px solid #dcefeb;
+        border-radius: 16px;
+        box-shadow: 0 4px 16px rgba(17, 124, 134, 0.07);
+    }
+
+    .difference-table tbody td {
+        display: block;
+        width: 100%;
+        padding: 14px 16px;
+        border: none;
+        font-size: 17px;
+        line-height: 1.75;
+        overflow-wrap: anywhere;
+        word-break: normal;
+    }
+
+    .difference-table tbody td:first-child {
+        width: 100%;
+        padding: 14px 16px;
+        background: linear-gradient(110deg, #e8f9f5, #f2fcf8);
+        color: #117c86;
+        font-size: 15px;
+        font-weight: 800;
+        border-bottom: 1px solid #e0efec;
+    }
+
+    .difference-table tbody td:nth-child(2) {
+        padding-top: 13px;
+        color: #374151;
+        background: #ffffff;
+    }
+
+    .difference-table tbody tr:hover td,
+    .difference-table tbody tr:hover td:first-child {
+        background-color: inherit;
+    }
+
+    .difference-table tbody tr:hover td:first-child {
+        background: linear-gradient(110deg, #fafffe, #ffffff);
+    }
 }
 
-@media (max-width: 768px) {
-  .features-difference {
-    padding: 40px 0;
-  }
+/* Extra-small phones */
+@media (max-width: 360px) {
+    .difference-table tbody tr {
+        border-radius: 12px;
+        margin-bottom: 12px;
+    }
 
-  .feature-card {
-    padding: 20px;
-  }
+    .difference-table tbody td {
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    .difference-table tbody td:first-child {
+        padding: 12px;
+        font-size: 16px;
+    }
 }
 
   </style>
@@ -265,7 +430,8 @@
         aria-label="Eleventh navbar example">
         <div class="container-fluid">
 
-          <a class="navbar-brand" href="index.html" style="font-size: 30px; padding-right: 20px;"><b>Finest</b> Matrimony</a>
+          <a class="navbar-brand" href="index.html" style="font-size: 30px; padding-right: 20px;"><b>Finest</b>
+            Matrimony</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample09"
             aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -306,10 +472,10 @@
               <!-- Facebook SVG -->
               <a href="https://www.facebook.com/people/Finest-Matrimony/61590498790100/">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-facebook"
-                viewBox="0 0 20 20">
-                <path
-                  d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
-              </svg>
+                  viewBox="0 0 20 20">
+                  <path
+                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                </svg>
               </a>
             </span>
             <a href="https://www.instagram.com/finestmatrimony/">
@@ -323,46 +489,44 @@
               </span>
             </a>
 
-           <a href="https://www.linkedin.com/company/finestmatrimony/"><span class="social-icon">
-              <!-- LinkedIn SVG -->
-              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-linkedin"
-                viewBox="0 0 20 20">
-                <path
-                  d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
-              </svg>
-            </span>
-</a>
+            <a href="https://www.linkedin.com/company/finestmatrimony/"><span class="social-icon">
+                <!-- LinkedIn SVG -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-linkedin"
+                  viewBox="0 0 20 20">
+                  <path
+                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                </svg>
+              </span>
+            </a>
             <a href="https://play.google.com/store/apps/details?id=com.sreebala.finestmatrimony" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
-                  alt="Get it on Google Play">
-              </a>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                alt="Get it on Google Play">
+            </a>
           </div>
         </div>
       </nav>
     </div>
-    
+
   </div>
 
- 
+
 
   <!-- Hero Section -->
   <section class="refer-hero">
     <div class="container">
-        <div class="text-end ">
-  <a href="Refer&EarnT&C.html"
-     class="btn btn-outline-success  rounded-pill px-4 py-2 "">
-    <i class="bi bi-file-earmark-text"></i>
-    Terms &amp; Conditions
-  </a>
+      <div class="text-end ">
+        <a href="Refer&EarnT&C.html" class="btn btn-outline-success  rounded-pill px-4 py-2 "">
+    <i class=" bi bi-file-earmark-text"></i>
+          Terms &amp; Conditions
+        </a>
 
-  <a href="Refer&EarnPrivacyPolicy.html"
-     class="btn btn-outline-success rounded-pill px-4 py-2">
-    <i class="bi bi-shield-lock"></i>
-    Privacy Policy
-  </a>
-</div>
+        <a href="Refer&EarnPrivacyPolicy.html" class="btn btn-outline-success rounded-pill px-4 py-2">
+          <i class="bi bi-shield-lock"></i>
+          Privacy Policy
+        </a>
+      </div>
 
-<br><br><br><br>
+      <br><br><br><br>
       <div class="row align-items-center g-4">
 
         <div class="col-md-7">
@@ -378,18 +542,14 @@
             together with Finest Matrimony.
           </p>
 
-          <a href="https://play.google.com/store/apps/details?id=com.sreebala.finestmatrimony"
-            target="_blank" rel="noopener noreferrer"
-            class="btn btn-success btn-lg mt-2">
+          <a href="https://play.google.com/store/apps/details?id=com.sreebala.finestmatrimony" target="_blank"
+            rel="noopener noreferrer" class="btn btn-success btn-lg mt-2">
             View on Google Play Store
           </a>
         </div>
 
         <div class="col-md-5 text-center">
-          <img src="finest-logo.png"
-            alt="Finest Matrimony Logo"
-            class="img-fluid"
-            >
+          <img src="finest-logo.png" alt="Finest Matrimony Logo" class="img-fluid">
         </div>
 
       </div>
@@ -403,135 +563,149 @@
 
 
   <!-- How It Works -->
-  
-<!-- Features and Unique Differences -->
-<section class="features-difference">
-  <div class="container">
 
-    <div class="text-center mb-5">
-      <h2 class="features-heading">
-        What Makes Finest Refer &amp; Earn Special?
-      </h2>
-      <p class="text-muted mt-3">
-        More than just referrals — helping people discover meaningful
-        connections while creating opportunities to earn.
-      </p>
-    </div>
+  <!-- Features and Unique Differences -->
+  <section class="features-difference">
+    <div class="container">
 
-  
-    <!-- Unique Difference Table and Illustration -->
-    <div class="row g-4 align-items-stretch">
-
-      <div class="col-lg-8">
-        <h3 class="features-heading mb-3">
-          How Is Finest Refer &amp; Earn Different?
-        </h3>
-
-        <p class="text-muted">
-          Explore the features and approach of our referral programme.
-        </p>
-
-        <div class="difference-table-wrap">
-          <table class="table table-bordered difference-table">
-
-            <thead>
-              <tr>
-                <th>Feature</th>
-                <th>Finest Refer &amp; Earn</th>
-                <th>What It Means for You</th>
-              </tr>
-            </thead>
-
-            <tbody>
-              <tr>
-                <td>Referral rewards</td>
-                <td>Separate bride and groom rewards</td>
-                <td>Know the applicable reward before referring.</td>
-              </tr>
-
-              <tr>
-                <td>Referral tracking</td>
-                <td>Personal referral code</td>
-                <td>Share your own code with potential users.</td>
-              </tr>
-
-              <tr>
-                <td>Dedicated app</td>
-                <td>Separate Refer &amp; Earn app</td>
-                <td>Participate through a dedicated application.</td>
-              </tr>
-
-              <tr>
-                <td>Reward conditions</td>
-                <td>Published eligibility terms</td>
-                <td>Understand the applicable reward conditions.</td>
-              </tr>
-
-              <tr>
-                <td>Partner opportunities</td>
-                <td>Creator and promotional collaborations</td>
-                <td>Explore opportunities to grow together.</td>
-              </tr>
-
-              <tr>
-                <td>Purpose</td>
-                <td>Connect people with Finest Matrimony</td>
-                <td>Help others discover the platform.</td>
-              </tr>
-            </tbody>
-
-          </table>
-        </div>
-
-        <p class="small text-muted mt-2">
-          Rewards, eligibility, and payment are subject to the
-          applicable programme terms and conditions.
+      <div class="text-center mb-5">
+        <h2 class="features-heading">
+          What Makes Finest Matrimony the Finest?
+        </h2>
+        <p class="text-muted mt-3">
+          Where Trust Begins, Relationships Grow <br> വിശ്വാസം തുടങ്ങുന്നിടത്ത് ബന്ധങ്ങൾ വളരുന്നു...
         </p>
       </div>
 
-      <!-- Concept illustration -->
-      <div class="col-lg-4">
-        <div class="feature-visual h-100 d-flex flex-column
-                    justify-content-center">
 
-          <div style="font-size: 65px;">💑</div>
 
-          <h4 class="mt-3">Your Referral Creates Connections</h4>
+      <!-- Finest Matrimony: Features and Illustration -->
+      <div class="row g-4 align-items-stretch">
+
+        <!-- Column 1: Features Table -->
+        <div class="col-lg-8">
+          <h3 class="features-heading mb-3">
+            How Is Finest Matrimony Different?
+          </h3>
 
           <p class="text-muted">
-            You refer. They discover. Relationships begin.
+            Finding your life partner deserves trust, privacy, and the freedom
+            to choose. Finest Matrimony is designed with these needs in mind.
           </p>
 
-          <div class="row text-center mt-3 g-2">
+          <div class="difference-table-wrap">
+            <table class="table table-bordered difference-table">
+              <thead>
+                <tr>
+                  <th>Feature</th>
+                  <th>How it works or help</th>
+                </tr>
+              </thead>
 
-            <div class="col-4">
-              <div style="font-size: 30px;">📲</div>
-              <small class="fw-bold">Share</small>
-            </div>
+              <tbody>
+                <tr>
+                  <td>Indian Number Login only</td>
+                  <td>India-Focused Security & Legal Accountability: Indian-number-based account traceability to help
+                    address fraud, impersonation, and misuse</td>
+                </tr>
+                <tr>
+                  <td>Mandatory Govt ID Verification</td>
+                  <td>Helps ensure profile authenticity and discourage fake accounts, impersonation, and fraud.</td>
+                </tr>
+                <tr>
+                  <td>No other logins, only Phone Auth</td>
+                  <td>Our platform does not allow email-based login. Do you know why? can create as many email IDs as
+                    want. Email accounts can be created freely without Aadhaar verification, making it easy to create
+                    fake profiles and inflate user numbers. We do not want such profiles on our platform. Our goal is
+                    not to make money, but to build a genuine and trustworthy Finest platform.</td>
+                </tr>
+                <tr>
+                  <td>Your Contact Number, Your Consent</td>
+                  <td>
 
-            <div class="col-4">
-              <div style="font-size: 30px;">💍</div>
-              <small class="fw-bold">Connect</small>
-            </div>
+                    Have you noticed that some other platforms offer plans costing around ₹2,500 for three months, with
+                    limits such as accessing the contact details of only 50 profiles? <br>
 
-            <div class="col-4">
-              <div style="font-size: 30px;">🎉</div>
-              <small class="fw-bold">Earn</small>
-            </div>
+                    Think about it. You should be able to accept a request only when you are genuinely interested.
+                    Otherwise, receiving unwanted calls can feel like harassment. <br>
+
+                    On Finest Matrimony, you can accept or reject requests based on your interest. If you are interested
+                    in a profile, accept the request. Only then will your contact details be shared with that person.
+                    <br>
+
+                    Anyone accessing your profile should not automatically get your contact number.
+                    Your contact details are shared only when you accept their request. <br>
+
+                    Your privacy. Your choice. Your consent. That's Finest Matrimony.
+                  </td>
+                </tr>
+                <tr>
+                  <td>No Commission, No Extra Service Charges</td>
+                  <td>Finest Matrimony offers an annual plan for just ₹999 — a one-year platform fee. <br>
+
+                    Unlike some other platforms, we do not charge high fees such as ₹2,400, ₹6,000, ₹10,000, or even
+                    ₹50,000 for different plans. <br>
+
+                    No service charges. No commission. No hidden fees. <br>
+
+                    Just ₹999 for one year of platform access. <br>
+
+                    Our goal is not to make money through expensive plans or commissions. We aim to build a genuine,
+                    trustworthy, and user-friendly matrimony platform.</td>
+                </tr>
+                <tr>
+                  <td>Screenshot Protection</td>
+                  <td>Helps protect your privacy by preventing screenshots within the app, so you can share your profile
+                    photos with greater confidence.</td>
+                </tr>
+                <tr>
+                  <td>Profile Changes Require Review </td>
+                  <td>Profiles are verified using government-issued ID before activation. Any profile edits must be
+                    reviewed before becoming visible. This helps prevent frequent changes to names, dates of birth, and
+                    other details that could mislead users.</td>
+                </tr>
+                <tr>
+                  <td>Profile Photo Verification </td>
+                  <td>All new or updated profile photos are reviewed before publication. Blank images, AI-generated cartoon pictures, and unsuitable photos will not be approved. Only photos that meet our verification requirements will be displayed.</td>
+                </tr>
+
+                <tr>
+                  <td>Report & Safety</td>
+                  <td>We take every report seriously and work to address issues. Stay tuned for updates!</td>
+                </tr>
+                <tr>
+                  <td>Protected Profile Photos</td>
+                  <td>Your profile photos are protected within our platform and are not intended to appear in Google
+                    Images or other public search results, unlike publicly accessible profiles on some platforms.</td>
+                </tr>
+
+                <tr>
+                  <td>No Demo or Sample Photos</td>
+                  <td>Unlike platforms that display sample profile images, Finest Matrimony displays actual member
+                    profile photos to help users assess profile authenticity.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Column 2: Illustration PNG -->
+        <div class="col-lg-4">
+          <div class="feature-visual 
+                justify-content-center">
+
+            <img src="img_finest_assets\Finest Refer & Earn Features Infographic.png" alt="Finest Matrimony illustration showing people connecting
+             through referrals" class="img-fluid" style="width:100%; max-width:450px; height:auto;" loading="lazy">
 
           </div>
 
-          <p class="mt-4 mb-0 fw-semibold" style="color: #117c86;">
-            Together, We Grow.
-          </p>
-
         </div>
+
       </div>
 
-    </div>
 
-  </div>
-</section>
+    </div>
+  </section>
 
 
   <section style="background: linear-gradient(to right, #78f6ff, #ffffff);">
@@ -660,7 +834,7 @@
         </p>
 
         <a href="">
-          <h4> team@finestmatrimony.com    |   +91 85900 12123</h4>
+          <h4> team@finestmatrimony.com | +91 85900 12123</h4>
         </a>
       </div>
 
@@ -678,8 +852,7 @@
           <p class="mb-1">📞 +91 85900 12123</p>
           <p class="mb-0">
             📧
-            <a href="mailto:team@finestmatrimony.com"
-              class="text-white text-decoration-none">
+            <a href="mailto:team@finestmatrimony.com" class="text-white text-decoration-none">
               team@finestmatrimony.com
             </a>
           </p>
@@ -698,10 +871,10 @@
 
         <div class="col mb-3">
           <h5>
-            <svg xmlns="http://www.w3.org/2000/svg"
-              width="20" height="20" fill="white"
-              viewBox="0 0 16 16" class="me-1">
-              <path d="M8.354 1.146a.5.5 0 0 0-.708 0L1 7.793V14.5a.5.5 0 0 0 .5.5H6v-4h4v4h4.5a.5.5 0 0 0 .5-.5V7.793z"/>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" viewBox="0 0 16 16"
+              class="me-1">
+              <path
+                d="M8.354 1.146a.5.5 0 0 0-.708 0L1 7.793V14.5a.5.5 0 0 0 .5.5H6v-4h4v4h4.5a.5.5 0 0 0 .5-.5V7.793z" />
             </svg>
             Headquarters
           </h5>
@@ -719,9 +892,8 @@
 
       <div class="text-center py-3 border-top">
         <small class="text-white">
-          <a href="https://sreebala.in/"
-            class="text-white text-decoration-none"
-            target="_blank" rel="noopener noreferrer">
+          <a href="https://sreebala.in/" class="text-white text-decoration-none" target="_blank"
+            rel="noopener noreferrer">
             Sreebala Technology Services LLP
           </a>
           • All rights reserved
@@ -735,5 +907,6 @@
   <script src="version_holder.js"></script>
 
 </body>
+
 </html>
 ```
