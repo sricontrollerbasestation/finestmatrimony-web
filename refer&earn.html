@@ -418,6 +418,25 @@
     }
 }
 
+
+.language-switch {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.language-switch .btn {
+    font-weight: 600;
+    min-width: 100px;
+}
+
+@media (max-width: 576px) {
+    .language-switch {
+        justify-content: center;
+    }
+}
+
   </style>
 </head>
 
@@ -525,6 +544,19 @@
           Privacy Policy
         </a>
       </div>
+      <br>
+      <!-- Language Switch -->
+<div class="language-switch text-end mb-3">
+    <a href="refer&earn.html"
+       class="btn btn-success rounded-pill px-4">
+        English
+    </a>
+
+    <a href="refer-earn-ml.html"
+       class="btn btn-outline-success rounded-pill px-4">
+        മലയാളം
+    </a>
+</div>
 
       <br><br><br><br>
       <div class="row align-items-center g-4">
